@@ -1,0 +1,15 @@
+1. Main files
+entropy.py - function for entropy
+majority_error.py - function for majority error
+gini.py - function for gini
+Information_gain.py
+IG3.py - main IG3 algorithm
+helper.py - help functions such as open_file, numerialAttribution, genTree, missingData
+
+2. Problem files
+Q2_2.py - Code for problem 2.2
+Q2_3.py - Code for problem 2.3
+
+3.Main file
+run.sh - It runs Q2_2.py and Q2_3.py. It will print average errors data and raw error data. 
+
