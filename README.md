@@ -34,5 +34,14 @@ It calculates gradient of the cost function by one step and update new weight ve
 ## 3.2 Stochastic Gradient Descent
 It calculated gradietn of the cost function one by one and immediately update new weight vector.
 
-
+# 4. Perceptron learning
+Please move to Experiment folder, and implement run.sh. The results of each methods - standard, voted, average- are saved at each folder as csv file.
+## 4.1 Standard perceptron
+Result Q2 2 a folder has all results. 
+## 4.2 Voted perceptron
+Result Q2 2 b folder has all results.
+## 4.3 Average perceptron
+Result Q2 2 c folder has all results.
+## 4.4 Compare three methods
+Reuslt Q2 2 d folder has all results. 
 

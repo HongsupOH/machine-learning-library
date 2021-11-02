@@ -31,7 +31,6 @@ print("START Batch")
 w,costs = batch_gradient(S_train,label_train,T,r,threshold)
 w_opt = np.linalg.inv(S_train.T.dot(S_train)).dot(S_train.T.dot(label_train))
 print("END Batch")
-print("END stochastic")
 print("w = {}".format(w))
 print("w_opt = {}".format(w_opt))
 
