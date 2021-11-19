@@ -19,7 +19,7 @@ epoch = 100
 r0s = [0.01, 0.005, 0.0025, 0.00125, 0.000625]
 a_s = [1,0.5,0.1, 0.05, 0.01, 0.001,0.0005]
 mode = 1
-print('Mode 1')
+print('Start Q2-2-a')
 for C in [100/873,500/873,700/873]:
     err_opt = np.inf
     for r0 in r0s:
@@ -37,8 +37,8 @@ for C in [100/873,500/873,700/873]:
     Y_hat_t = prediction(w_opt,X_test)
     err = len(Y_test[Y_test!=Y_hat_t])/len(Y_test)
     print('Test Error = {}%'.format(err*100))
-    
-print('Mode 2')   
+print('End Q2-2-a\n')
+print('Start Q2-2-b')   
 mode = 2
 for C in [100/873,500/873,700/873]:
     err_opt = np.inf
@@ -57,5 +57,5 @@ for C in [100/873,500/873,700/873]:
     Y_hat_t = prediction(w_opt,X_test)
     err = len(Y_test[Y_test!=Y_hat_t])/len(Y_test)
     print('Test Error = {}%'.format(err*100))
-    
+print('End Q2-2-b\n')
     

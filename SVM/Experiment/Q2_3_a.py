@@ -14,7 +14,7 @@ Y_train = modify_label(Y_train)
 X_test,Y_test = gen_train_test('../bank-note/test.csv',none_one=True)
 Y_test = modify_label(Y_test)
 g = 0
-
+print("START Q2-3-a")
 for C in [100/873,500/873,700/873]:
     
     print('START C = {}, g = {} ...'.format(C,g))
@@ -37,4 +37,4 @@ for C in [100/873,500/873,700/873]:
     print("Training error is {} %".format(err*100))
     print("Test error is {} %".format(err_t*100))
     print('END C = {}, g = {} ...\n'.format(C,g))
-    
+print("END Q2-3-a")
