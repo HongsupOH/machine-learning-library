@@ -14,7 +14,7 @@ def stochastic_sub_gradient_descent(X,Y,C,r0,a,epoch,mode):
             if pred <=1:
                 w0 = np.array(w,copy=True)
                 w0[-1] = 0
-                w = (1 - rt)*w0 +rt*C*n*y*x
+                w = w - rt*w0 +rt*C*n*y*x
             else:
                 w[:-1] = (1 - rt)*w[:-1]
     return w

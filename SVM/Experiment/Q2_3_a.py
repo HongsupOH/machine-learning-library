@@ -28,11 +28,12 @@ for C in [100/873,500/873,700/873]:
     print("The number of support vector: {}".format(len(alpha[alpha>0])))
     w_opt = dual_weights(alpha,X_train,Y_train)
     b_opt = dual_bias(alpha,X_train,Y_train,0)
-    
-    y_hat = dual_prediction_kernel(alpha,X_train,X_train,Y_train,b_opt,g)
+    print("w_opt = {}".format(w_opt))
+    print("b_opt = {}".format(b_opt))
+    y_hat = dual_prediction(w_opt,b_opt,X_train)
     err = len(Y_train[Y_train!=y_hat])/len(Y_train)
     
-    y_hat_t = dual_prediction_kernel(alpha,X_train,X_test,Y_train,b_opt,g)
+    y_hat_t = dual_prediction(w_opt,b_opt,X_test)
     err_t = len(Y_test[Y_test!=y_hat_t])/len(Y_test)
     print("Training error is {} %".format(err*100))
     print("Test error is {} %".format(err_t*100))

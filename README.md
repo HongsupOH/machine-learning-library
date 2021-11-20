@@ -44,4 +44,12 @@ Result Q2 2 b folder has all results.
 Result Q2 2 c folder has all results.
 ## 4.4 Compare three methods
 Reuslt Q2 2 d folder has all results. 
+# 5. SVC
+Please move to Experiment folder, and implement run.sh.
+## 5.1 Stochastic sub gradient descent
+First, suffle the data every epoch. Second, measure prediction. Third, update weight vector.
+## 5.2 Linear classification
+First, define boundary and constraints. Second, implement scipy optimize to minimize object function. Third, measure optimal weight vector and optimal bias. Finally, measure predictions. Everythins are based on linear kernel.
+## 5.3 Non linear classification
+First, define boundary and constraints. Second, implement scipy optimize to minimize object function. Third, measure optimal weight vector and optimal bias. Finally, measure predictions. Everythins are based on Gaussian kernel.
 

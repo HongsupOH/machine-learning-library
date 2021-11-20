@@ -30,7 +30,8 @@ for C in [500/873]:
         alpha_dict[ind] = alpha
         if ind!=0:
             print("Compare {} and {}".format(g,gamma[ind-1]))
-            same_len = np.sum(alpha==alpha_dict[ind-1])
+            prev_alpha = alpha_dict[ind-1]
+            same_len = np.sum(alpha[alpha>0]==prev_alpha[alpha>0])
             print("{} elements are same".format(same_len))
         print('END C = {}, g = {} ...\n'.format(C,g))
 print("END Q2-3-c")

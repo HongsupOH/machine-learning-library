@@ -21,6 +21,7 @@ a_s = [1,0.5,0.1, 0.05, 0.01, 0.001,0.0005]
 mode = 1
 print('Start Q2-2-a')
 for C in [100/873,500/873,700/873]:
+    print("### C : {}###".format(C))
     err_opt = np.inf
     for r0 in r0s:
         for a in a_s:
@@ -41,18 +42,19 @@ print('End Q2-2-a\n')
 print('Start Q2-2-b')   
 mode = 2
 for C in [100/873,500/873,700/873]:
+    print("### C : {}###".format(C))
     err_opt = np.inf
     for r0 in r0s:
-        for a in a_s:
-            w = stochastic_sub_gradient_descent(X_train,Y_train,C,r0,a,epoch,mode)
-            Y_hat = prediction(w,X_train)
-            err = len(Y_train[Y_train!=Y_hat])/len(Y_train)
-            if err < err_opt:
-                err_opt = err
-                r0_opt,a_opt = r0,a
-                w_opt = w
+        a = 0
+        w = stochastic_sub_gradient_descent(X_train,Y_train,C,r0,a,epoch,mode)
+        Y_hat = prediction(w,X_train)
+        err = len(Y_train[Y_train!=Y_hat])/len(Y_train)
+        if err < err_opt:
+            err_opt = err
+            r0_opt,a_opt = r0,a
+            w_opt = w
                 
-    print('Best r0={},a={}'.format(r0_opt,a_opt))
+    print('Best r0={}'.format(r0_opt))
     print('Trainining Error = {}%'.format(err_opt*100))
     Y_hat_t = prediction(w_opt,X_test)
     err = len(Y_test[Y_test!=Y_hat_t])/len(Y_test)
