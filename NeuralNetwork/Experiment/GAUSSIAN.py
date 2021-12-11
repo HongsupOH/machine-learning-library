@@ -15,7 +15,7 @@ Y_train = modify_label(Y_train)
 X_test,Y_test = gen_train_test('../bank-note/test.csv')
 Y_test = modify_label(Y_test)
 
-epoch = 20
+epoch = 10
 r0s = [0.01,0.5,0.0025, 0.00125]
 a_s = [1,0.5,0.1, 0.05, 0.01, 0.001,0.0005]
 mode = 1
