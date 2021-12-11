@@ -52,7 +52,7 @@ First, suffle the data every epoch. Second, measure prediction. Third, update we
 First, define boundary and constraints. Second, implement scipy optimize to minimize object function. Third, measure optimal weight vector and optimal bias. Finally, measure predictions. Everythins are based on linear kernel.
 ## 5.3 Non linear classification
 First, define boundary and constraints. Second, implement scipy optimize to minimize object function. Third, measure optimal weight vector and optimal bias. Finally, measure predictions. Everythins are based on Gaussian kernel.
-#6. Neural Network
+# 6. Neural Network
 Please move to Experiment folder, and implement run.sh.
 First, you need call NeuralNetwork class. Next, you need call add layer function. Neural network will find best weight through stochastic gradient descent with forward/back propagation. 
 ## 6.1 Gaussian
@@ -60,7 +60,7 @@ Initial weight is Gaussian distribution. It can be defined at add layer function
 ## 6.2 Zero
 Initial weight is zero array. It can be defined at add layer function.
 
-#7. Logistic Regression
+# 7. Logistic Regression
 Please move to Experiment folder, and implement run.sh.
 ## 7.1 MAP
 Both prior and posterior parts are considered to objective function. We need to tune gamma, d and variance to find the good answer. We just optimize the objective function and update weight vector.
